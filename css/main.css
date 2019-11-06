@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.background_cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 500px; }
+
+.header {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5); }
+  .header .header__left {
+    display: flex;
+    align-items: center; }
+    .header .header__left .logo {
+      flex-grow: 1; }
+      .header .header__left .logo img {
+        width: 110px; }
+    .header .header__left .categories {
+      flex-grow: 1; }
+    .header .header__left .search {
+      flex-grow: 5; }
+      .header .header__left .search .input-group .form-control {
+        transition: none;
+        background-color: #f2f3f5;
+        border: none; }
+        .header .header__left .search .input-group .form-control:focus {
+          box-shadow: none;
+          background-color: white;
+          border: 0.5px solid #cacbcc;
+          border-right: none; }
+          .header .header__left .search .input-group .form-control:focus + .input-group-append .input-group-text {
+            background-color: white;
+            border: 0.5px solid #cacbcc; }
+      .header .header__left .search .input-group .input-group-append .input-group-text {
+        background-color: #f2f3f5;
+        border: none; }
+  .header .header__right {
+    display: flex;
+    align-items: center; }
+    .header .header__right .nav-item .nav-link {
+      background-color: white;
+      border: none; }
+    .header .header__right .nav-item:hover {
+      background-color: #f2f3f5; }
+      .header .header__right .nav-item:hover .nav-link {
+        background-color: #f2f3f5; }
+    .header .header__right .cart__shopping {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+    .header .header__right .item {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      margin-right: 30px; }
+      .header .header__right .item .item__child {
+        position: absolute;
+        top: 50%;
+        left: 50%; }
+
+.btn--white {
+  font-weight: 600;
+  font-size: 15px;
+  color: #686f7a;
+  background-color: #fff;
+  border: 1px solid #505763;
+  padding: 11px 12px; }
+  .btn--white:hover {
+    background-color: rgba(20, 23, 28, 0.05); }
+
+.btn--red {
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  background-color: #ec5252;
+  border: 1px solid #ec5252;
+  padding: 11px 12px; }
+  .btn--red:hover {
+    background-color: #F7F8FA; }
+
+.cover {
+  background-image: url("../img/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative; }
+  .cover .__title {
+    width: 35%;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 12%; }
+    .cover .__title .__span {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .cover .__title .input-group .form-control {
+      transition: none;
+      background-color: #f2f3f5;
+      border: none; }
+      .cover .__title .input-group .form-control:focus {
+        box-shadow: none;
+        background-color: white;
+        border: 0.5px solid #cacbcc;
+        border-right: none; }
+        .cover .__title .input-group .form-control:focus + .input-group-append .input-group-text {
+          background-color: white;
+          border: 0.5px solid #cacbcc; }
+    .cover .__title .input-group .input-group-append .input-group-text {
+      background-color: #f2f3f5;
+      border: none; }
+
+.udemy-work {
+  height: 100px;
+  background-color: #505763; }
+
+.courses {
+  width: 95%;
+  margin: 0 auto; }
+  .courses .nav-tabs .nav-item .nav-link {
+    border-color: transparent;
+    border-bottom-color: #dee2e6;
+    position: relative; }
+    .courses .nav-tabs .nav-item .nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 0%;
+      height: 4px;
+      background-color: #505763; }
+    .courses .nav-tabs .nav-item .nav-link.active::before {
+      width: 100%; }
+  .courses .make-slide {
+    position: relative; }
+  .courses .owl-prev {
+    background: red !important;
+    position: absolute;
+    top: 35%;
+    left: 15%; }
+  .courses .owl-next {
+    background: red !important;
+    position: absolute;
+    top: 35%;
+    right: 15%; }
+
+/*# sourceMappingURL=main.css.map */

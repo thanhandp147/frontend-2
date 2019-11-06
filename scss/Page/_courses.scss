@@ -1,0 +1,42 @@
+.courses{
+    width: 95%;
+    margin: 0 auto;
+    .nav-tabs{
+        .nav-item{
+            .nav-link{
+                border-color: transparent;
+                border-bottom-color: #dee2e6;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 0%;
+                    height: 4px;
+                    background-color: #505763;
+                }
+                &.active::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .make-slide{
+        position: relative;
+        
+    }
+    .owl-prev{
+        
+        background: red !important;
+        position: absolute;
+        top: 35%;
+        left: 15%;
+    }
+    .owl-next{
+        background: red !important;
+        position: absolute;
+        top: 35%   ;
+        right: 15%;
+    }
+}
